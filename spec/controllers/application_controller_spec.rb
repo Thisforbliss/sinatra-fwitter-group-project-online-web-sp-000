@@ -23,8 +23,8 @@ describe ApplicationController do
         :email => "skittles@aol.com",
         :password => "rainbows"
       }
-      post '/signup', params
-      expect(last_response.location).to include("/tweets")
+      post '/signup', paramsinclude
+      expect(last_response.location).to ("/tweets")
     end
 
     it 'does not let a user sign up without a username' do
